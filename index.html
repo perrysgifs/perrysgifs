@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#0a0b10" />
+    <title>Ozmep’s GIF Gallery</title>
+    <meta
+      name="description"
+      content="A curated gallery of GIFs from Ozmep’s GIPHY channel."
+    />
+    <meta property="og:title" content="Ozmep’s GIF Gallery" />
+    <meta
+      property="og:description"
+      content="A curated gallery of GIFs from Ozmep’s GIPHY channel."
+    />
+    <meta
+      property="og:image"
+      content="https://media.giphy.com/avatars/ozmep/BYFs5Tl388Rb/200h.jpg"
+    />
+    <link
+      rel="icon"
+      href="https://media.giphy.com/avatars/ozmep/BYFs5Tl388Rb/200h.jpg"
+      type="image/jpeg"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://media.giphy.com/avatars/ozmep/BYFs5Tl388Rb/200h.jpg"
+    />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true"></div>
+
+    <header class="top">
+      <div class="wrap top__inner">
+        <a class="brand" href="./" aria-label="Home">
+          <span class="brand__mark" aria-hidden="true">
+            <img
+              class="brand__avatar"
+              src="https://media.giphy.com/avatars/ozmep/BYFs5Tl388Rb/200h.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+              referrerpolicy="no-referrer"
+            />
+          </span>
+          <span class="brand__text">Ozmep’s GIF Gallery</span>
+        </a>
+
+        <nav class="top__nav" aria-label="Links">
+          <a
+            class="pill pill--ghost"
+            href="https://instagram.com/ozmep8162"
+            target="_blank"
+            rel="noreferrer"
+            >Instagram @ozmep8162</a
+          >
+          <a
+            class="pill"
+            href="https://giphy.com/channel/ozmep"
+            target="_blank"
+            rel="noreferrer"
+            >View channel</a
+          >
+          <button class="pill pill--ghost" id="themeToggle" type="button">
+            Toggle theme
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <div class="hero__text">
+          <h1 class="hero__title">Fresh loops, clean presentation.</h1>
+          <p class="hero__subtitle">
+            Pulled from the GIPHY channel and displayed in a fast, minimal gallery.
+          </p>
+
+          <div class="ctaRow" aria-label="Primary links">
+            <a
+              class="btn btn--main btn--giphy"
+              href="https://giphy.com/channel/ozmep"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open GIPHY channel"
+            >
+              <span class="btn__icon" aria-hidden="true">
+                <img
+                  class="btn__iconImg btn__iconImg--giphy"
+                  src="https://giphy.com/static/img/giphy-logo.webp"
+                  alt=""
+                  decoding="async"
+                  referrerpolicy="no-referrer"
+                />
+              </span>
+              <span class="btn__label">GIPHY Channel</span>
+            </a>
+            <a
+              class="btn btn--main btn--instagram"
+              href="https://instagram.com/ozmep8162"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open Instagram profile"
+            >
+              <span class="btn__icon" aria-hidden="true">
+                <svg
+                  class="btn__iconSvg"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                >
+                  <path
+                    d="M7.5 2.75h9A4.75 4.75 0 0 1 21.25 7.5v9A4.75 4.75 0 0 1 16.5 21.25h-9A4.75 4.75 0 0 1 2.75 16.5v-9A4.75 4.75 0 0 1 7.5 2.75Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M12 16.05a4.05 4.05 0 1 0 0-8.1 4.05 4.05 0 0 0 0 8.1Z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M17.35 6.85h.01"
+                    stroke="currentColor"
+                    stroke-width="2.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <span class="btn__label">Instagram @ozmep8162</span>
+            </a>
+          </div>
+
+          <div class="controls" role="group" aria-label="Gallery controls">
+            <label class="field">
+              <span class="field__label">Search</span>
+              <input
+                id="search"
+                class="input"
+                type="search"
+                placeholder="Try: scared, roblox, spongebob…"
+                autocomplete="off"
+              />
+            </label>
+
+            <label class="field">
+              <span class="field__label">Layout</span>
+              <select id="layout" class="input" aria-label="Layout">
+                <option value="masonry" selected>Masonry</option>
+                <option value="grid">Grid</option>
+              </select>
+            </label>
+
+            <button class="btn" id="shuffle" type="button">Shuffle</button>
+          </div>
+        </div>
+
+        <div class="hero__card" aria-label="Stats">
+          <div class="stat">
+            <div class="stat__label">GIFs loaded</div>
+            <div class="stat__value" id="statCount">—</div>
+          </div>
+          <div class="stat">
+            <div class="stat__label">Last build</div>
+            <div class="stat__value" id="statBuild">—</div>
+          </div>
+          <div class="divider" role="presentation"></div>
+          <p class="muted">
+            Tip: click any GIF to open a focused view with quick actions.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel" aria-label="Gallery">
+        <div class="panel__head">
+          <h2 class="panel__title">Gallery</h2>
+          <div class="panel__meta" id="metaText">Loading…</div>
+        </div>
+
+        <div id="error" class="error" hidden></div>
+        <div id="gallery" class="gallery gallery--masonry" aria-live="polite"></div>
+      </section>
+
+      <section class="panel panel--twoCol" aria-label="Suggestions">
+        <div class="panel__head">
+          <h2 class="panel__title">Have a suggestion?</h2>
+          <div class="panel__meta">This is a demo inbox (stored locally).</div>
+        </div>
+
+        <form id="suggestForm" class="suggest" autocomplete="off">
+          <label class="field">
+            <span class="field__label">Name</span>
+            <input class="input" name="name" placeholder="Your name" />
+          </label>
+          <label class="field">
+            <span class="field__label">Email (optional)</span>
+            <input class="input" name="email" type="email" placeholder="you@example.com" />
+          </label>
+          <label class="field field--full">
+            <span class="field__label">Suggestion</span>
+            <textarea
+              class="input input--area"
+              name="message"
+              required
+              placeholder="What should the next GIF vibe be?"
+              rows="4"
+            ></textarea>
+          </label>
+          <div class="suggest__actions">
+            <button class="btn" type="submit">Send suggestion</button>
+            <button class="btn btn--ghost" id="clearSuggestions" type="button">
+              Clear local inbox
+            </button>
+          </div>
+          <p class="muted">
+            No backend here—this is purely to show layout, UX, and attention to detail.
+          </p>
+        </form>
+
+        <aside class="inbox" aria-label="Local inbox">
+          <div class="inbox__head">
+            <div class="inbox__title">Local inbox</div>
+            <div class="inbox__meta" id="inboxCount">0</div>
+          </div>
+          <ul class="inbox__list" id="inboxList"></ul>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <div class="muted">Built as a lightweight, static gallery.</div>
+        <div class="muted">
+          Source GIFs:
+          <a href="https://giphy.com/channel/ozmep" target="_blank" rel="noreferrer">GIPHY channel</a>
+          <span class="footer__sep" aria-hidden="true">·</span>
+          <a href="https://instagram.com/ozmep8162" target="_blank" rel="noreferrer">Instagram @ozmep8162</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="modal" hidden aria-hidden="true">
+      <div class="modal__backdrop" data-close="true"></div>
+      <div class="modal__card" role="dialog" aria-modal="true" aria-label="GIF viewer">
+        <button class="iconBtn modal__close" type="button" aria-label="Close" data-close="true">
+          ✕
+        </button>
+        <div class="modal__media">
+          <img id="modalImg" alt="" />
+        </div>
+        <div class="modal__body">
+          <div class="modal__title" id="modalTitle">—</div>
+          <div class="modal__actions">
+            <a class="btn" id="openOnGiphy" href="#" target="_blank" rel="noreferrer">Open on GIPHY</a>
+            <button class="btn btn--ghost" id="copyLink" type="button">Copy link</button>
+          </div>
+          <div class="muted mono" id="modalUrl">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" hidden role="status" aria-live="polite"></div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
