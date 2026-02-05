@@ -1,8 +1,16 @@
 {
   "channel": "https://giphy.com/channel/perrysgifs",
-  "builtAt": "2026-02-05T15:39:49.567Z",
-  "count": 5,
+  "builtAt": "2026-02-05T15:47:37.300Z",
+  "count": 8,
   "gifs": [
+    {
+      "id": "QBon2pcaLboFjCxsbO",
+      "pageUrl": "https://giphy.com/gifs/lion-gamma-the-doesnt-study-for-cyber-QBon2pcaLboFjCxsbO",
+      "title": "lion gamma the doesnt study for cyber",
+      "previewUrl": "https://media.giphy.com/media/QBon2pcaLboFjCxsbO/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/QBon2pcaLboFjCxsbO/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/QBon2pcaLboFjCxsbO/200.gif"
+    },
     {
       "id": "0jPXSgFXQlyM67aXKH",
       "pageUrl": "https://giphy.com/gifs/laughing-point-finger-cry-laugh-0jPXSgFXQlyM67aXKH",
@@ -20,6 +28,30 @@
       "stillUrl": "https://media.giphy.com/media/LuFblOld77mv3KWJdV/200.gif"
     },
     {
+      "id": "6tMU56clnFWBLYIHy8",
+      "pageUrl": "https://giphy.com/gifs/frog-in-the-store-what-will-he-buy-6tMU56clnFWBLYIHy8",
+      "title": "frog in the store what will he buy",
+      "previewUrl": "https://media.giphy.com/media/6tMU56clnFWBLYIHy8/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/6tMU56clnFWBLYIHy8/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/6tMU56clnFWBLYIHy8/200.gif"
+    },
+    {
+      "id": "oLt3rgEggUxySXcd38",
+      "pageUrl": "https://giphy.com/gifs/cat-sad-poor-oLt3rgEggUxySXcd38",
+      "title": "cat sad poor",
+      "previewUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/200.gif"
+    },
+    {
+      "id": "5hKE1OZM4HHMTdfW9M",
+      "pageUrl": "https://giphy.com/gifs/not-funny-didnt-laugh-5hKE1OZM4HHMTdfW9M",
+      "title": "not funny didnt laugh",
+      "previewUrl": "https://media.giphy.com/media/5hKE1OZM4HHMTdfW9M/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/5hKE1OZM4HHMTdfW9M/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/5hKE1OZM4HHMTdfW9M/200.gif"
+    },
+    {
       "id": "GjkkooweBST4WSuucb",
       "pageUrl": "https://giphy.com/gifs/true-fact-checked-goatis-GjkkooweBST4WSuucb",
       "title": "true fact checked goatis",
@@ -34,14 +66,6 @@
       "previewUrl": "https://media.giphy.com/media/LcEtqrS4LmwPHFRT7A/giphy_s.gif",
       "gifUrl": "https://media.giphy.com/media/LcEtqrS4LmwPHFRT7A/giphy.gif",
       "stillUrl": "https://media.giphy.com/media/LcEtqrS4LmwPHFRT7A/200.gif"
-    },
-    {
-      "id": "oLt3rgEggUxySXcd38",
-      "pageUrl": "https://giphy.com/gifs/cat-sad-poor-oLt3rgEggUxySXcd38",
-      "title": "cat sad poor",
-      "previewUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/giphy_s.gif",
-      "gifUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/giphy.gif",
-      "stillUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/200.gif"
     }
   ]
 }
