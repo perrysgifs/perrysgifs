@@ -365,6 +365,9 @@ a:hover { text-decoration: underline; }
   justify-content: center;
   padding: 20px;
 }
+.modal[hidden] {
+  display: none !important;
+}
 .modal__backdrop {
   position: absolute;
   inset: 0;
