@@ -1,7 +1,31 @@
 {
   "channel": "https://giphy.com/channel/perrysgifs",
-  "builtAt": "2026-02-05T00:00:00.000Z",
-  "count": 0,
+  "builtAt": "2026-02-05T15:35:26.428Z",
+  "count": 3,
   "gifs": [
+    {
+      "id": "oLt3rgEggUxySXcd38",
+      "pageUrl": "https://giphy.com/gifs/cat-sad-poor-oLt3rgEggUxySXcd38",
+      "title": "cat sad poor",
+      "previewUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/200.gif"
+    },
+    {
+      "id": "LuFblOld77mv3KWJdV",
+      "pageUrl": "https://giphy.com/gifs/sad-terrified-happy-to-LuFblOld77mv3KWJdV",
+      "title": "sad terrified happy to",
+      "previewUrl": "https://media.giphy.com/media/LuFblOld77mv3KWJdV/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/LuFblOld77mv3KWJdV/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/LuFblOld77mv3KWJdV/200.gif"
+    },
+    {
+      "id": "LcEtqrS4LmwPHFRT7A",
+      "pageUrl": "https://giphy.com/gifs/candle-LcEtqrS4LmwPHFRT7A",
+      "title": "candle",
+      "previewUrl": "https://media.giphy.com/media/LcEtqrS4LmwPHFRT7A/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/LcEtqrS4LmwPHFRT7A/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/LcEtqrS4LmwPHFRT7A/200.gif"
+    }
   ]
 }
