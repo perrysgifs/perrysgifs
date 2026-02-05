@@ -1,4 +1,4 @@
-/* Ozmep’s GIF Gallery — lightweight client-side UI */
+/* Perry’s GIF Gallery — lightweight client-side UI */
 
 const $ = (sel, root = document) => root.querySelector(sel);
 
@@ -50,7 +50,7 @@ function formatRelativeTime(iso) {
 function setTheme(theme) {
   state.theme = theme;
   document.documentElement.dataset.theme = theme === "light" ? "light" : "dark";
-  localStorage.setItem("ozmep.theme", state.theme);
+  localStorage.setItem("perry.theme", state.theme);
 }
 
 function toast(msg) {
@@ -94,7 +94,7 @@ function setLayout(layout) {
   const gallery = $("#gallery");
   gallery.classList.toggle("gallery--masonry", layout === "masonry");
   gallery.classList.toggle("gallery--grid", layout === "grid");
-  localStorage.setItem("ozmep.layout", state.layout);
+  localStorage.setItem("perry.layout", state.layout);
 }
 
 function renderGallery() {
@@ -324,8 +324,8 @@ function wireUi() {
 }
 
 function initPrefs() {
-  const savedTheme = localStorage.getItem("ozmep.theme");
-  const savedLayout = localStorage.getItem("ozmep.layout");
+  const savedTheme = localStorage.getItem("perry.theme");
+  const savedLayout = localStorage.getItem("perry.layout");
   setTheme(savedTheme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"));
   setLayout(savedLayout || "masonry");
   $("#layout").value = state.layout;

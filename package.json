@@ -1,12 +1,11 @@
 {
-  "name": "ozmepgifs",
+  "name": "perrysgifs",
   "private": true,
   "version": "1.0.0",
-  "description": "Ozmep’s GIF Gallery (static site)",
+  "description": "Perry's GIF Vault (static site)",
   "type": "module",
   "scripts": {
     "fetch": "node scripts/fetch-gifs.mjs",
     "serve": "python -m http.server 5173"
   }
 }
-

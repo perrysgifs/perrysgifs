@@ -4,29 +4,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark light" />
-    <meta name="theme-color" content="#0a0b10" />
-    <title>Ozmep’s GIF Gallery</title>
+    <meta name="theme-color" content="#ff6b6b" />
+    <title>Perry's GIF Vault</title>
     <meta
       name="description"
-      content="A curated gallery of GIFs from Ozmep’s GIPHY channel."
+      content="Random moments turned into GIFs you'll overuse. Reactions, laughs, and perfectly timed loops."
     />
-    <meta property="og:title" content="Ozmep’s GIF Gallery" />
+    <meta property="og:title" content="Perry's GIF Vault" />
     <meta
       property="og:description"
-      content="A curated gallery of GIFs from Ozmep’s GIPHY channel."
+      content="Random moments turned into GIFs you'll overuse. Reactions, laughs, and perfectly timed loops."
     />
     <meta
       property="og:image"
-      content="https://media.giphy.com/avatars/ozmep/BYFs5Tl388Rb/200h.jpg"
+      content="https://media.giphy.com/avatars/perrysgifs/default1.jpg"
     />
     <link
       rel="icon"
-      href="https://media.giphy.com/avatars/ozmep/BYFs5Tl388Rb/200h.jpg"
+      href="https://media.giphy.com/avatars/perrysgifs/default1.jpg"
       type="image/jpeg"
     />
     <link
       rel="apple-touch-icon"
-      href="https://media.giphy.com/avatars/ozmep/BYFs5Tl388Rb/200h.jpg"
+      href="https://media.giphy.com/avatars/perrysgifs/default1.jpg"
     />
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
@@ -38,38 +38,35 @@
       <div class="wrap top__inner">
         <a class="brand" href="./" aria-label="Home">
           <span class="brand__mark" aria-hidden="true">
-            <img
-              class="brand__avatar"
-              src="https://media.giphy.com/avatars/ozmep/BYFs5Tl388Rb/200h.jpg"
-              alt=""
-              loading="lazy"
-              decoding="async"
-              referrerpolicy="no-referrer"
-            />
+            <svg class="brand__logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <path d="M12 2L2 7v10c0 5.5 3.8 10.7 10 12 6.2-1.3 10-6.5 10-12V7l-10-5z" fill="currentColor" opacity="0.2"/>
+              <path d="M12 2L2 7v10c0 5.5 3.8 10.7 10 12 6.2-1.3 10-6.5 10-12V7l-10-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <circle cx="12" cy="12" r="3" fill="currentColor"/>
+            </svg>
           </span>
-          <span class="brand__text">Ozmep’s GIF Gallery</span>
+          <span class="brand__text">Perry's GIF Vault</span>
         </a>
 
         <nav class="top__nav" aria-label="Links">
           <a
             class="pill pill--ghost"
-            href="https://www.instagram.com/meep8162/"
+            href="https://www.instagram.com/perrysgifs/"
             target="_blank"
             rel="noreferrer"
-            >Instagram @meep8162</a
+            >Instagram</a
           >
           <a
             class="pill"
-            href="https://giphy.com/channel/ozmep"
+            href="https://giphy.com/channel/perrysgifs"
             target="_blank"
             rel="noreferrer"
-            >View channel</a
+            >GIPHY Channel</a
           >
           <button class="pill pill--ghost" id="openSuggest" type="button">
-            Suggest
+            Request GIF
           </button>
           <button class="pill pill--ghost" id="themeToggle" type="button">
-            Toggle theme
+            Theme
           </button>
         </nav>
       </div>
@@ -78,15 +75,15 @@
     <main class="wrap">
       <section class="hero">
         <div class="hero__text">
-          <h1 class="hero__title">Fresh loops, clean presentation.</h1>
+          <h1 class="hero__title">GIFs you'll probably overuse.</h1>
           <p class="hero__subtitle">
-            Pulled from the GIPHY channel and displayed in a fast, minimal gallery.
+            Random moments, perfectly timed loops. Here for the laughs, the reactions, and everything in between.
           </p>
 
           <div class="ctaRow" aria-label="Primary links">
             <a
               class="btn btn--main btn--giphy"
-              href="https://giphy.com/channel/ozmep"
+              href="https://giphy.com/channel/perrysgifs"
               target="_blank"
               rel="noreferrer"
               aria-label="Open GIPHY channel"
@@ -100,11 +97,11 @@
                   referrerpolicy="no-referrer"
                 />
               </span>
-              <span class="btn__label">Ozmep Channel</span>
+              <span class="btn__label">Perry on GIPHY</span>
             </a>
             <a
               class="btn btn--main btn--instagram"
-              href="https://www.instagram.com/meep8162/"
+              href="https://www.instagram.com/perrysgifs/"
               target="_blank"
               rel="noreferrer"
               aria-label="Open Instagram profile"
@@ -134,38 +131,38 @@
                   />
                 </svg>
               </span>
-              <span class="btn__label">@meep8162</span>
+              <span class="btn__label">@perrysgifs</span>
             </a>
           </div>
 
           <div class="controls" role="group" aria-label="Gallery controls">
             <label class="field">
-              <span class="field__label">Search</span>
+              <span class="field__label">Search reactions</span>
               <input
                 id="search"
                 class="input"
                 type="search"
-                placeholder="Try: scared, roblox, spongebob…"
+                placeholder="Find your reaction..."
                 autocomplete="off"
               />
             </label>
 
             <label class="field">
-              <span class="field__label">Layout</span>
+              <span class="field__label">View</span>
               <select id="layout" class="input" aria-label="Layout">
                 <option value="masonry" selected>Masonry</option>
                 <option value="grid">Grid</option>
               </select>
             </label>
 
-            <button class="btn" id="shuffle" type="button">Shuffle</button>
+            <button class="btn" id="shuffle" type="button">🔀 Shuffle</button>
           </div>
         </div>
       </section>
 
       <section class="panel" aria-label="Gallery">
         <div class="panel__head">
-          <h2 class="panel__title">Gallery</h2>
+          <h2 class="panel__title">The Vault</h2>
           <div class="panel__meta" id="metaText">Loading…</div>
         </div>
 
@@ -176,12 +173,11 @@
 
     <footer class="footer">
       <div class="wrap footer__inner">
-        <div class="muted">Built as a lightweight, static gallery.</div>
+        <div class="muted">Perry's GIF Vault — Your daily dose of perfectly timed reactions.</div>
         <div class="muted">
-          Source GIFs:
-          <a href="https://giphy.com/channel/ozmep" target="_blank" rel="noreferrer">GIPHY channel</a>
+          <a href="https://giphy.com/channel/perrysgifs" target="_blank" rel="noreferrer">GIPHY</a>
           <span class="footer__sep" aria-hidden="true">·</span>
-          <a href="https://www.instagram.com/meep8162/" target="_blank" rel="noreferrer">Instagram @meep8162</a>
+          <a href="https://www.instagram.com/perrysgifs/" target="_blank" rel="noreferrer">Instagram</a>
         </div>
       </div>
     </footer>
@@ -225,9 +221,9 @@
           ✕
         </button>
         <div class="modal__body">
-          <div class="modal__title">Suggestion</div>
+          <div class="modal__title">Request a Reaction</div>
           <p class="muted" style="margin: 8px 0 0">
-            Got an idea for the next GIF? Send it here.
+            Have a moment that needs to be a GIF? Let me know!
           </p>
 
           <form id="suggestForm" class="suggestModal__form" autocomplete="off">
@@ -245,11 +241,11 @@
                 class="input input--area"
                 name="message"
                 required
-                placeholder="What should the next GIF vibe be?"
+                placeholder="What reaction moment do you need?"
                 rows="4"
               ></textarea>
             </label>
-            <button class="btn" id="suggestSubmit" type="submit">Send</button>
+            <button class="btn" id="suggestSubmit" type="submit">Send Request</button>
           </form>
         </div>
       </div>
