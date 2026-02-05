@@ -229,15 +229,6 @@ function wireUi() {
     applyFilter();
   });
 
-  $("#shuffle").addEventListener("click", () => {
-    state.gifs = shuffleArray(state.gifs);
-    applyFilter();
-    toast("Shuffled");
-  });
-
-  const layout = $("#layout");
-  layout.addEventListener("change", () => setLayout(layout.value));
-
   // Modal
   $("#modal").addEventListener("click", (e) => {
     const t = e.target;
@@ -325,10 +316,8 @@ function wireUi() {
 
 function initPrefs() {
   const savedTheme = localStorage.getItem("perry.theme");
-  const savedLayout = localStorage.getItem("perry.layout");
   setTheme(savedTheme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"));
-  setLayout(savedLayout || "masonry");
-  $("#layout").value = state.layout;
+  setLayout("masonry");
 }
 
 initPrefs();

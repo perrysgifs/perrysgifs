@@ -1,15 +1,15 @@
 {
   "channel": "https://giphy.com/channel/perrysgifs",
-  "builtAt": "2026-02-05T15:35:26.428Z",
-  "count": 3,
+  "builtAt": "2026-02-05T15:39:49.567Z",
+  "count": 5,
   "gifs": [
     {
-      "id": "oLt3rgEggUxySXcd38",
-      "pageUrl": "https://giphy.com/gifs/cat-sad-poor-oLt3rgEggUxySXcd38",
-      "title": "cat sad poor",
-      "previewUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/giphy_s.gif",
-      "gifUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/giphy.gif",
-      "stillUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/200.gif"
+      "id": "0jPXSgFXQlyM67aXKH",
+      "pageUrl": "https://giphy.com/gifs/laughing-point-finger-cry-laugh-0jPXSgFXQlyM67aXKH",
+      "title": "laughing point finger cry laugh",
+      "previewUrl": "https://media.giphy.com/media/0jPXSgFXQlyM67aXKH/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/0jPXSgFXQlyM67aXKH/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/0jPXSgFXQlyM67aXKH/200.gif"
     },
     {
       "id": "LuFblOld77mv3KWJdV",
@@ -20,12 +20,28 @@
       "stillUrl": "https://media.giphy.com/media/LuFblOld77mv3KWJdV/200.gif"
     },
     {
+      "id": "GjkkooweBST4WSuucb",
+      "pageUrl": "https://giphy.com/gifs/true-fact-checked-goatis-GjkkooweBST4WSuucb",
+      "title": "true fact checked goatis",
+      "previewUrl": "https://media.giphy.com/media/GjkkooweBST4WSuucb/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/GjkkooweBST4WSuucb/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/GjkkooweBST4WSuucb/200.gif"
+    },
+    {
       "id": "LcEtqrS4LmwPHFRT7A",
       "pageUrl": "https://giphy.com/gifs/candle-LcEtqrS4LmwPHFRT7A",
       "title": "candle",
       "previewUrl": "https://media.giphy.com/media/LcEtqrS4LmwPHFRT7A/giphy_s.gif",
       "gifUrl": "https://media.giphy.com/media/LcEtqrS4LmwPHFRT7A/giphy.gif",
       "stillUrl": "https://media.giphy.com/media/LcEtqrS4LmwPHFRT7A/200.gif"
+    },
+    {
+      "id": "oLt3rgEggUxySXcd38",
+      "pageUrl": "https://giphy.com/gifs/cat-sad-poor-oLt3rgEggUxySXcd38",
+      "title": "cat sad poor",
+      "previewUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/giphy_s.gif",
+      "gifUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/giphy.gif",
+      "stillUrl": "https://media.giphy.com/media/oLt3rgEggUxySXcd38/200.gif"
     }
   ]
 }

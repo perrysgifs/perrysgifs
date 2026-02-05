@@ -169,12 +169,9 @@ a:hover { text-decoration: underline; }
 .controls {
   margin-top: 28px;
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr;
   gap: 12px;
   align-items: end;
-}
-@media (max-width: 640px) {
-  .controls { grid-template-columns: 1fr; }
 }
 
 .field {
