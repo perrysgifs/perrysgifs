@@ -17,7 +17,7 @@ function normalize(str) {
 function titleFromPageUrl(pageUrl) {
   try {
     const u = new URL(pageUrl);
-    // /gifs/<slug>-<id>
+    // /gifs/<slug>-<id>w
     const parts = u.pathname.split("/").filter(Boolean);
     const gifsIdx = parts.indexOf("gifs");
     const slugAndId = gifsIdx >= 0 ? parts[gifsIdx + 1] : parts.at(-1);
